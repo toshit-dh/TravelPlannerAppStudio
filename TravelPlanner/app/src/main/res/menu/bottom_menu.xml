@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/home"/>
+
+    <item
+        android:id="@+id/trip"
+        android:title="My Trips"
+        android:icon="@drawable/beach"
+        />
+
+    <item
+        android:id="@+id/go"
+        android:title="Add Trips"
+        android:icon="@drawable/location" />
+    <item
+        android:id="@+id/offers"
+        android:title="Offers"
+        android:icon="@drawable/money" />
+    <item
+        android:id="@+id/calendar"
+        android:title="Calendar"
+        android:icon="@drawable/calendar"/>
+
+</menu>
