@@ -6,7 +6,7 @@
     android:padding="20dp"
     android:id="@+id/dialogLogout"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/multi_color_background"
+    android:background="@drawable/backgr"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -23,12 +23,12 @@
             android:id="@+id/LogoutTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/multi_color_background"
+
             android:drawableLeft="@drawable/lock"
             android:drawablePadding="8dp"
             android:padding="10dp"
             android:text="Confirm Logout"
-            android:textColor="@color/white"
+            android:textColor="@color/lavender"
             android:textSize="17sp"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,22 +40,22 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="20dp"
             android:text="Enter your Password"
-            android:textColor="@color/black"
+            android:textColor="@color/lavender"
             android:textSize="16sp"
             app:layout_constraintBottom_toTopOf="@id/passBox"
             app:layout_constraintTop_toBottomOf="@id/LogoutTitle" />
 
         <EditText
             android:id="@+id/passBox"
-            android:layout_width="300dp"
-            android:layout_height="49dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
             android:layout_marginBottom="30dp"
-            android:backgroundTint="@color/black"
+            android:backgroundTint="@color/lavender"
             android:hint="Password"
             android:inputType="textPassword"
             android:maxLines="1"
-            android:textColor="@color/black"
+            android:textColor="@color/lavender"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -69,9 +69,9 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#FF5733"
+            android:backgroundTint="@color/lavender"
             android:text="Logout"
-            android:textColor="@color/white"
+
             android:textSize="18sp"
             app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="@id/dialogBox"
@@ -89,9 +89,9 @@
             android:layout_marginTop="30dp"
             android:layout_marginEnd="40dp"
             android:layout_marginBottom="8dp"
-            android:backgroundTint="#FF5733"
+            android:backgroundTint="@color/lavender"
             android:text="Cancel"
-            android:textColor="@color/white"
+
             android:textSize="18sp"
             app:cornerRadius="20dp"
             app:layout_constraintBottom_toBottomOf="@id/dialogBox"

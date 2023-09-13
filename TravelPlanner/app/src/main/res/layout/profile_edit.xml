@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/multi_color_background"
+    android:background="@drawable/backgr"
     tools:context=".ui.login.EditProfile">
 
     <androidx.cardview.widget.CardView
@@ -92,7 +92,7 @@
 
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="#FF7753"
+                android:backgroundTint="@color/lavender"
                 app:cornerRadius = "20dp"/>
 
         </LinearLayout>

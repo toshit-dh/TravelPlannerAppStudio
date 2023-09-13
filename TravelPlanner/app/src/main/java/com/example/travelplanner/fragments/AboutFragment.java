@@ -26,12 +26,6 @@ public class AboutFragment extends Fragment {
         webView.loadUrl("www.google.com");
 
         webView.setWebViewClient(new WebViewClient());
-
-
-
-
-
-
         return view;
     }
 }

@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.example.travelplanner.R;
 import com.example.travelplanner.ui.login.Login;
@@ -25,8 +26,9 @@ public class ShareFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Toast.makeText(getActivity(), "Link Copied !", Toast.LENGTH_SHORT).show();
         // Inflate the layout for this fragment
-        View view =  inflater.inflate(R.layout.fragment_share, container, false);
+        //View view =  inflater.inflate(R.layout.fragment_share, container, false);
 //        yesbtn = view.findViewById(R.id.btnyes);
 //        ,nobtn = view.findViewById(R.id.btnno);
 //        yesbtn.setOnClickListener(new View.OnClickListener() {
@@ -42,6 +44,6 @@ public class ShareFragment extends Fragment {
 //            fragmentManager.popBackStack();
 //            }
 //        });
-        return view;
+        return null;
     }
 }

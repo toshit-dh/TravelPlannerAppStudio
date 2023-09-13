@@ -131,6 +131,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         liveLayout.setOnClickListener(v -> {
 
             dialog.dismiss();
+
             openfragment(new GuideFragment());
 
         });

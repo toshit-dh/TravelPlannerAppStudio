@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/multi_color_background"
+    android:background="@drawable/backgr"
     tools:context=".activities.TravelPlanner">
 
 
@@ -34,23 +34,23 @@
         android:textSize="45sp" />
 
 
+    <ImageView
+        android:id="@+id/animatedImage"
+        android:layout_width="145dp"
+        android:layout_height="185dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="95dp"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="611dp"
 
-        <ImageView
-            android:id="@+id/animatedImage"
-            android:layout_width="211dp"
-            android:layout_height="230dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentEnd="true"
-            android:layout_alignParentBottom="true"
-            android:elevation="4dp"
-            android:layout_marginStart="114dp"
-            android:layout_marginTop="22dp"
-            android:layout_marginEnd="86dp"
-            android:layout_marginBottom="479dp"
-            android:src="@drawable/logo" />
+        android:elevation="15dp"
+        android:src="@drawable/transitionfotor" />
 
-    </RelativeLayout>
+</RelativeLayout>
 
 
 

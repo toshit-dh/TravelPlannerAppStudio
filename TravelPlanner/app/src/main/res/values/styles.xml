@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <style name="statusbar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <item name="colorPrimaryDark">@color/notif</item>
-        <item name="colorAccent">@color/notif</item>
+        <item name="colorPrimaryDark">@color/lavender</item>
+        <item name="colorAccent">#FFFFFF</item>
     </style>
     <style name="DialogAnimation">
         <item name="android:windowEnterAnimation">@anim/slide_in</item>

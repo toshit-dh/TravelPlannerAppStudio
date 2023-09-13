@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:background="@drawable/multi_color_background"
+    android:background="@drawable/backgr"
     tools:context=".ui.login.Signup">
 
     <androidx.cardview.widget.CardView
@@ -32,7 +32,7 @@
                 android:textSize="36sp"
                 android:textAlignment="center"
                 android:textStyle="bold"
-                android:textColor="@color/black"/>
+                android:textColor="@color/lavender"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -44,7 +44,7 @@
                 android:hint="Name"
                 android:drawableLeft="@drawable/person"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/lavender"/>
 
             <EditText
                 android:layout_width="match_parent"
@@ -57,7 +57,7 @@
                 android:hint="Email"
                 android:drawableLeft="@drawable/email"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/lavender"/>
 
 
             <EditText
@@ -70,7 +70,7 @@
                 android:hint="Username"
                 android:drawableLeft="@drawable/person"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/lavender"/>
 
 
 
@@ -85,7 +85,7 @@
                 android:inputType="textPassword"
                 android:drawableStart="@drawable/lock"
                 android:drawablePadding="8dp"
-                android:textColor="@color/black"/>
+                android:textColor="@color/lavender"/>
 
 
 
@@ -96,7 +96,7 @@
                 android:id="@+id/signup_button"
                 android:textSize="18sp"
                 android:layout_marginTop="30dp"
-                android:backgroundTint="#FF5733"
+                android:backgroundTint="@color/lavender"
                 app:cornerRadius = "20dp"/>
 
             <TextView
@@ -107,7 +107,7 @@
                 android:layout_gravity="center"
                 android:padding="8dp"
                 android:layout_marginTop="10dp"
-                android:textColor="@color/black"
+                android:textColor="@color/lavender"
                 android:textSize="18sp"/>
 
         </LinearLayout>

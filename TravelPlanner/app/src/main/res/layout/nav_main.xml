@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     android:fitsSystemWindows="true"
-    android:background="@drawable/multi_color_background"
+    android:background="@drawable/backgr"
     tools:openDrawer="start"
     tools:context=".activities.Home">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/multi_color_background"
+        android:background="@drawable/backgr"
         android:orientation="vertical">
 
         <androidx.appcompat.widget.Toolbar
@@ -22,7 +22,7 @@
             android:layout_height="56dp"
             android:id="@+id/toolbar"
             android:elevation="4dp"
-            android:background="#FFFFFF"
+            android:background="@color/white"
             android:theme="@style/ThemeOverlay.AppCompat.Light"
             android:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
@@ -44,7 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
-            android:background="@drawable/multi_color_background"
+            android:background="@color/lavender"
             app:fabCradleMargin="10dp"
             app:fabCradleRoundedCornerRadius="50dp">
 
@@ -53,7 +53,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="20dp"
-                android:background="@drawable/multi_color_background"
+                android:background="@drawable/bottom_nav_back"
                 app:labelVisibilityMode="labeled"
                 app:menu="@menu/bottom_menu" />
         </com.google.android.material.bottomappbar.BottomAppBar>
@@ -63,7 +63,8 @@
             <com.google.android.material.floatingactionbutton.FloatingActionButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#FFFFFF"
+                android:backgroundTint="@color/lavender"
+                android:background="@color/lavender"
                 android:src="@drawable/add"
                 app:layout_anchor="@id/bottomAppBar"
                 app:maxImageSize="40dp"
@@ -75,7 +76,7 @@
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
-        android:background="@drawable/multi_color_background"
+        android:background="@drawable/profile"
         android:id="@+id/nav_view"
         android:layout_gravity="start"
         app:headerLayout="@layout/nav_header"
