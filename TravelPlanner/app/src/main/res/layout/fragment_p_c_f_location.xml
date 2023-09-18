@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PCFLocation">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/lavender"
+            android:text="From Where"/>
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/planedittextcountry"
+            android:background="@drawable/custom_text"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="Country"
+            android:drawableLeft="@drawable/map1"
+            android:textColor="@color/lavender"
+            android:drawablePadding="8dp"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/planedittextcity"
+            android:background="@drawable/custom_text"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="City"
+            android:drawableLeft="@drawable/map1"
+            android:textColor="@color/lavender"
+            android:drawablePadding="8dp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="8dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:id="@+id/destext"
+
+            android:textColor="@color/lavender"
+            android:text="To Where"/>
+
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/planedittextcountrydes"
+            android:background="@drawable/custom_text"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+
+            android:hint="Country"
+            android:drawableLeft="@drawable/map1"
+            android:textColor="@color/lavender"
+            android:drawablePadding="8dp"/>
+
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/planedittextcitydes"
+
+            android:background="@drawable/custom_text"
+            android:layout_marginTop="40dp"
+            android:padding="8dp"
+            android:hint="City"
+            android:drawableLeft="@drawable/map1"
+            android:textColor="@color/lavender"
+            android:drawablePadding="8dp"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

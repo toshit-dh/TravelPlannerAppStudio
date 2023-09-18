@@ -21,7 +21,6 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import com.example.travelplanner.R;
 import com.example.travelplanner.fragments.AboutFragment;
@@ -34,7 +33,7 @@ import com.example.travelplanner.fragments.ShareFragment;
 import com.example.travelplanner.fragments.OfferFragment;
 import com.example.travelplanner.fragments.ProfileFragment;
 import com.example.travelplanner.fragments.SettingsFragment;
-import com.example.travelplanner.fragments.ThinkFragment;
+import com.example.travelplanner.fragments.AccessibilityFragment;
 import com.example.travelplanner.fragments.TripFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -150,7 +149,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int itemid = item.getItemId();
         if (itemid == R.id.nav_home) {
-            openfragment(new ThinkFragment());
+            openfragment(new AccessibilityFragment());
         } else if (itemid == R.id.nav_settings) {
             openfragment(new SettingsFragment());
         } else if (itemid == R.id.nav_profile) {

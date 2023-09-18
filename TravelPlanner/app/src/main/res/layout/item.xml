@@ -4,14 +4,4 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/item1"
-        android:layout_width="match_parent"
-        android:layout_height="220dp"
-        android:layout_marginTop="8dp"
-        android:contentDescription="TODO"
-        android:scaleType="centerCrop"
-        android:src="@drawable/background" />
-
-
 </LinearLayout>

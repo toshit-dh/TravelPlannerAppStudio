@@ -8,7 +8,6 @@
 
     <application
         android:allowBackup="true"
-        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@drawable/logo"
@@ -16,11 +15,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
+        <activity
+            android:name=".Communication.BetweenFragments"
+            android:exported="false" />
         <activity
             android:name=".ui.login.Logout"
             android:exported="false"
-            android:theme="@style/statusbar"/>
+            android:theme="@style/statusbar" />
         <activity
             android:name=".ui.login.Forgot"
             android:exported="false"
@@ -47,22 +50,15 @@
         <activity
             android:name=".ui.login.Signup"
             android:exported="true"
-            android:theme="@style/statusbar">
-
-        </activity>
+            android:theme="@style/statusbar" />
         <activity
             android:name=".activities.Home"
             android:exported="true"
-            android:theme="@style/statusbar">
-
-        </activity>
-
+            android:theme="@style/statusbar" />
         <activity
             android:name=".ui.login.EditProfile"
             android:exported="true"
-            android:theme="@style/statusbar">
-
-        </activity>
+            android:theme="@style/statusbar" />
     </application>
 
 </manifest>

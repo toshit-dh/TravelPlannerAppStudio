@@ -1,7 +1,4 @@
 package com.example.travelplanner.fragments;
-
-
-
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -11,14 +8,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.travelplanner.R;
-
-
-public class ThinkFragment extends Fragment {
-
+public class PCFRoute extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_accessibility, container, false);
+        return inflater.inflate(R.layout.fragment_route, container, false);
     }
 }
