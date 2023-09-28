@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@drawable/white_box">
+
+        <!-- Destination Image -->
+        <ImageView
+            android:id="@+id/favdestinationImage"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <!-- Destination Name -->
+            <TextView
+                android:id="@+id/favdestinationName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"/>
+            <TextView
+                android:id="@+id/favbudget"
+                android:paddingLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Budget: "
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:id="@+id/favglass"
+                android:src="@drawable/search"
+                android:contentDescription="Explore"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/heart_border"
+                android:id="@+id/favheart"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:contentDescription="Favourite"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/favaddtotrips"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:src="@drawable/addtrip"/>
+        </LinearLayout>
+        <!-- Brief Description -->
+        <TextView
+            android:id="@+id/favdescription"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="16sp"
+            android:paddingTop="4dp"/>
+
+        <!-- Other Views like key features, weather info, etc. -->
+
+    </LinearLayout>
+
+</LinearLayout>

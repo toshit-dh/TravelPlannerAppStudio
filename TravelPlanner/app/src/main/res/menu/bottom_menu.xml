@@ -24,7 +24,7 @@
         android:icon="@drawable/money" />
     <item
         android:id="@+id/calendar"
-        android:title="Calendar"
-        android:icon="@drawable/calendar"/>
+        android:icon="@drawable/seat"
+        android:title="Favourites" />
 
 </menu>

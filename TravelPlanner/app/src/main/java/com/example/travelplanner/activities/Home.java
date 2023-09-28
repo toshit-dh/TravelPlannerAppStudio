@@ -24,7 +24,7 @@ import android.widget.LinearLayout;
 
 import com.example.travelplanner.R;
 import com.example.travelplanner.fragments.AboutFragment;
-import com.example.travelplanner.fragments.CalendarFragment;
+import com.example.travelplanner.fragments.FavouritesFragment;
 import com.example.travelplanner.fragments.DestinationFragment;
 import com.example.travelplanner.fragments.GuideFragment;
 import com.example.travelplanner.fragments.HomeFragment;
@@ -32,7 +32,6 @@ import com.example.travelplanner.fragments.PlanFragment;
 import com.example.travelplanner.fragments.ShareFragment;
 import com.example.travelplanner.fragments.OfferFragment;
 import com.example.travelplanner.fragments.ProfileFragment;
-import com.example.travelplanner.fragments.SettingsFragment;
 import com.example.travelplanner.fragments.AccessibilityFragment;
 import com.example.travelplanner.fragments.TripFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -85,7 +84,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                     openfragment(new OfferFragment());
                     return true;
                 } else if (itemid == R.id.calendar) {
-                    openfragment(new CalendarFragment());
+                    openfragment(new FavouritesFragment());
                     return true;
                 }
                 return false;
@@ -151,7 +150,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         if (itemid == R.id.nav_home) {
             openfragment(new AccessibilityFragment());
         } else if (itemid == R.id.nav_settings) {
-            openfragment(new SettingsFragment());
+            openfragment(new com.example.travelplanner.fragments.SettingsFragment());
         } else if (itemid == R.id.nav_profile) {
            openfragment(new ProfileFragment());
         } else if (itemid == R.id.nav_about) {

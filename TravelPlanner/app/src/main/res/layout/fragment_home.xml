@@ -5,13 +5,12 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgr"
     tools:context=".fragments.HomeFragment">
-
   <androidx.recyclerview.widget.RecyclerView
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
+      android:layout_height="wrap_content"
       android:id="@+id/homeRecyclerView"
       android:padding="16dp"
       android:layout_marginTop="60dp"
-      android:layout_marginBottom="60dp"/>
-
+      android:layout_marginBottom="60dp"
+      android:scrollbars="none"/>
 </FrameLayout>
