@@ -107,10 +107,7 @@ public class Login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (!validateUsername() | !validatePassword()) {
-                } else {
-                    checkUser();
-                }
+                startActivity(new Intent(Login.this,Home.class));
             }
         });
         signupRedirectText.setOnClickListener(new View.OnClickListener() {

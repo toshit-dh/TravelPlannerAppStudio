@@ -10,6 +10,10 @@ public class MyPrefs  {
         SharedPreferences preferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
         return preferences.getBoolean("intro_completed", false);
     }
+    public static boolean getLikedStatus(Context context) {
+        SharedPreferences preferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+        return preferences.getBoolean("liked", false);
+    }
 
     public static void setIntroCompletedStatus(Context context, boolean completed) {
         SharedPreferences preferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);

@@ -15,6 +15,7 @@ import android.widget.TextView;
 import com.example.travelplanner.R;
 import com.example.travelplanner.data.MyPrefs;
 import com.example.travelplanner.ui.login.Login;
+import com.example.travelplanner.ui.login.Signup;
 
 public class Start extends AppCompatActivity {
     private ImageView animatedImage;
@@ -40,19 +41,20 @@ public class Start extends AppCompatActivity {
         // Delayed runnable to finish the activity after 5 seconds
         new Handler(mainLooper).postDelayed(() -> {
 
-            if (MyPrefs.getIntroCompletedStatus(this)) {
-                if(MyPrefs.getSignUpCompletedStatus(this)){
-                // User has seen the introduction screen before, navigate to the main app screen
-                startActivity(new Intent(this, Home.class));
-                finish();
-                } else {
-                    startActivity(new Intent(this,Login.class));
-                    finish();
-                }
-            } else if (!MyPrefs.getIntroCompletedStatus(this)) {
-                startActivity(new Intent(this, Explore.class));
-                finish();
-            }
+//            if (MyPrefs.getIntroCompletedStatus(this)) {
+//                if(MyPrefs.getSignUpCompletedStatus(this)){
+//                // User has seen the introduction screen before, navigate to the main app screen
+//                startActivity(new Intent(this, Home.class));
+//                finish();
+//                } else {
+//                    startActivity(new Intent(this,Login.class));
+//                    finish();
+//                }
+//            } else if (!MyPrefs.getIntroCompletedStatus(this)) {
+//                startActivity(new Intent(this, Explore.class));
+//                finish();
+//            }
+            startActivity(new Intent(this, Signup.class));
 
         }, 6000); // 5000 milliseconds (5 seconds)
     }

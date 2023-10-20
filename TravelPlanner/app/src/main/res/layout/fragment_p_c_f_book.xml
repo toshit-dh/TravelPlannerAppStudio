@@ -5,22 +5,13 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         tools:context=".fragments.PCFDate">
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:layout_gravity="center_horizontal">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="20dp"
-                    android:textStyle="bold"
-                    android:textSize="36sp"
-                    android:text="Book Tickets !"
-                    android:textColor="@color/lavender"/>
-            </LinearLayout>
-        </ScrollView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Book Tickets"
+        android:id="@+id/bt"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/lavender"
+        app:cornerRadius = "20dp"/>
     </FrameLayout>

@@ -5,12 +5,48 @@
     android:layout_height="match_parent"
     android:background="@drawable/backgr"
     tools:context=".fragments.HomeFragment">
-  <androidx.recyclerview.widget.RecyclerView
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:id="@+id/homeRecyclerView"
-      android:padding="16dp"
-      android:layout_marginTop="60dp"
-      android:layout_marginBottom="60dp"
-      android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="International Destinations"
+        android:textColor="#ffffff"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:layout_marginBottom="60dp"
+        android:padding="16dp"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:elevation="4dp"
+        android:fontFamily="@font/font1"
+        android:gravity="center"
+        android:text="National Destinations"
+        android:textColor="#ffffff"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home2RecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="405dp"
+        android:layout_marginBottom="60dp"
+        android:padding="16dp"
+        android:scrollbars="none" />
 </FrameLayout>

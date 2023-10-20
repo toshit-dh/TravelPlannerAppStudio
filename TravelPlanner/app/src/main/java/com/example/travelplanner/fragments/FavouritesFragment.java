@@ -18,7 +18,7 @@ import java.util.List;
 
 public class FavouritesFragment extends Fragment {
     private List<Destination> favoriteDestinations = new ArrayList<>();
-    private FavouriteAdapter favoritesAdapter;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -26,8 +26,7 @@ public class FavouritesFragment extends Fragment {
 
         RecyclerView recyclerView = view.findViewById(R.id.favRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
-        favoritesAdapter = new FavouriteAdapter(favoriteDestinations);
-        recyclerView.setAdapter(favoritesAdapter);
+
 
         return view;
     }
@@ -36,6 +35,5 @@ public class FavouritesFragment extends Fragment {
     public void updateFavorites(List<Destination> favorites) {
         favoriteDestinations.clear();
         favoriteDestinations.addAll(favorites);
-        favoritesAdapter.notifyDataSetChanged();
     }
 }

@@ -76,9 +76,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:text="Forgot Password?"
                 android:layout_marginTop="5dp"
                 android:padding="8dp"
-                android:text="Forgot Password?"
                 android:textColor="@color/lavender"
                 android:textSize="16sp" />
 

@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
@@ -17,18 +16,20 @@
             android:layout_width="match_parent"
             android:layout_height="150dp"
             android:scaleType="centerCrop"/>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
-        <!-- Destination Name -->
-        <TextView
-            android:id="@+id/destinationName"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:paddingTop="8dp"/>
+            <!-- Destination Name -->
+            <TextView
+                android:id="@+id/destinationName"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="8dp"/>
+
             <TextView
                 android:id="@+id/budget"
                 android:paddingLeft="20dp"
@@ -38,6 +39,7 @@
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:paddingTop="8dp"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -46,6 +48,7 @@
                 android:id="@+id/glass"
                 android:src="@drawable/search"
                 android:contentDescription="Explore"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -54,6 +57,7 @@
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
                 android:contentDescription="Favourite"/>
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -62,6 +66,7 @@
                 android:paddingEnd="20dp"
                 android:src="@drawable/addtrip"/>
         </LinearLayout>
+
         <!-- Brief Description -->
         <TextView
             android:id="@+id/description"
@@ -69,9 +74,31 @@
             android:layout_height="50dp"
             android:textSize="16sp"
             android:paddingTop="4dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <!-- Date Label -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date:"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"/>
+
+        <!-- Date Input View -->
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="dd//mm//yy"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+</LinearLayout>
 
         <!-- Other Views like key features, weather info, etc. -->
 
     </LinearLayout>
-
 </LinearLayout>

@@ -1,6 +1,7 @@
 package com.example.travelplanner.utils;
 
 import com.example.travelplanner.data.Destination;
+import com.example.travelplanner.data.Destination2;
 
 import java.util.ArrayList;
 import java.util.List;

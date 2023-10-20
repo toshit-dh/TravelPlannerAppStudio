@@ -20,8 +20,8 @@
         android:icon="@drawable/location" />
     <item
         android:id="@+id/offers"
-        android:title="Offers"
-        android:icon="@drawable/money" />
+        android:icon="@drawable/weather"
+        android:title="Weather" />
     <item
         android:id="@+id/calendar"
         android:icon="@drawable/seat"

@@ -24,8 +24,9 @@ import android.widget.LinearLayout;
 
 import com.example.travelplanner.R;
 import com.example.travelplanner.fragments.AboutFragment;
-import com.example.travelplanner.fragments.FavouritesFragment;
+
 import com.example.travelplanner.fragments.DestinationFragment;
+import com.example.travelplanner.fragments.FavouritesFragment;
 import com.example.travelplanner.fragments.GuideFragment;
 import com.example.travelplanner.fragments.HomeFragment;
 import com.example.travelplanner.fragments.PlanFragment;
@@ -108,7 +109,6 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
         dialog.setContentView(R.layout.bottomsheetlayout);
 
         LinearLayout videoLayout = dialog.findViewById(R.id.layoutVideo);
-        LinearLayout shortsLayout = dialog.findViewById(R.id.layoutShorts);
         LinearLayout liveLayout = dialog.findViewById(R.id.layoutLive);
         ImageView cancelButton = dialog.findViewById(R.id.cancelButton);
 
@@ -119,12 +119,7 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
 
         });
 
-        shortsLayout.setOnClickListener(v -> {
 
-            dialog.dismiss();
-            openfragment(new DestinationFragment());
-
-        });
 
         liveLayout.setOnClickListener(v -> {
 

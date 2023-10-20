@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!-- Container for all the fields -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@drawable/white_box"
+        android:baselineAligned="false">
+
+        <!-- Source City -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source City"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:textColor="@color/lavender"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/sourceCityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false" />
+        </LinearLayout>
+
+        <!-- Source Country -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Source Country"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:textColor="@color/lavender"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/sourceCountryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <!-- Destination City -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination City"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:textColor="@color/lavender"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/destinationCityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </LinearLayout>
+
+        <!-- Destination Country -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Destination Country"
+                android:layout_marginTop="5dp"
+                android:padding="8dp"
+                android:textColor="@color/lavender"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/destinationCountryEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Date -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:textColor="@color/lavender"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/dateEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+    </LinearLayout>
+
+    <!-- Mode of Travel -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mode of Travel"
+            android:layout_marginTop="5dp"
+            android:padding="8dp"
+            android:textColor="@color/lavender"
+            android:textSize="16sp"/>
+
+        <EditText
+            android:id="@+id/modeOfTravelEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="See Weather Info "
+        android:id="@+id/weatherbutton"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/lavender"
+        app:cornerRadius = "20dp"/>
+</LinearLayout>

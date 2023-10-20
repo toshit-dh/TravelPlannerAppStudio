@@ -1,13 +1,12 @@
-package com.example.travelplanner.data;
-public class Destination {
+package com.example.travelplanner.data;public class Destination2 {
     private String name;
     private String description;
     private int imageResourceId;
     private String budget;
-    private String dianame;private String detail;private String ticket; private String stay; private String eat; private String visit; private String duration; private String calculation; private String tips; private String time; private String reach; private String currency; private String language;private String Capital;
+    private String dianame;private String detail;private String ticket; private String stay; private String eat; private String visit; private String duration; private String calculation; private String tips; private String time; private String reach;
 
 
-    public Destination(String name, String description,int imageResourceId,String budget,String detail,String dianame, String ticket, String stay, String eat, String visit, String duration, String calculation, String tips, String time, String reach, String currency, String language,String capital) {
+    public Destination2(String name, String description,int imageResourceId,String budget,String detail,String dianame, String ticket, String stay, String eat, String visit, String duration, String calculation, String tips, String time, String reach) {
         this.name = name;
         this.description = description;
         this.imageResourceId = imageResourceId;
@@ -20,12 +19,9 @@ public class Destination {
         this.calculation = calculation;
         this.time = time;
         this.tips = tips;
-        this.currency = currency;
         this.reach = reach;
-        this.language = language;
         this.detail = detail;
         this.dianame = dianame;
-        this.Capital = capital;
     }
 
     public String getDianame() {
@@ -68,17 +64,13 @@ public class Destination {
         return time;
     }
 
-    public String getCurrency() {
-        return currency;
-    }
+
 
     public String getReach() {
         return reach;
     }
 
-    public String getLanguage() {
-        return language;
-    }
+
 
     public String getName() {
         return name;
@@ -94,9 +86,5 @@ public class Destination {
 
     public int getImageResourceId() {
         return imageResourceId;
-    }
-
-    public String getCapital() {
-        return Capital;
     }
 }
